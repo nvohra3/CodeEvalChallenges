@@ -6,6 +6,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+/**
+ * My attempt at the Pass Triangle challenge
+ * Haven't touched this in a while, but I'm pretty sure it doesn't work
+ */
 public class PassTriangle {
 	public static void main(String[] args) throws FileNotFoundException {
 		//Scanner file = new Scanner(new File(args[0]));
