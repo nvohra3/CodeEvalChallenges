@@ -32,21 +32,14 @@ public class SumOfIntegers {
 		int currentSum = 0;
 		for (int i = 0; i < array.length; i++)
 		{
-			currentSum = array[i];
-			if (currentSum <= 0)
-			{
-				if (maxSum < currentSum)
-					maxSum = currentSum;
-				continue;
-			}
+			currentSum += array[i];
+			if (maxSum < currentSum)
+				maxSum = currentSum;
 
-			for (int j = i + 1; j < array.length; j++)
+			if (currentSum < 0)
 			{
-				currentSum += array[j];
-				if (maxSum < currentSum)
-					maxSum = currentSum;
-				if (currentSum <= 0)
-					break;
+				currentSum = 0;
+				continue;
 			}
 		}
 		return maxSum;
